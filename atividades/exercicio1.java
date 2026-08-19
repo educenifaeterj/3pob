@@ -12,7 +12,7 @@ import java.text.DecimalFormat;
 public class MediaAluno {
     public static void main(String[] args)   {
         Scanner sc = new Scanner(System.in);    
-        DecimalFormat df = new DecimalFormat("#,0");
+        DecimalFormat df = new DecimalFormat("#,00");
 
         System.out.print("Forneca o nome do aluno: ");
         String aluno = sc.next();
@@ -26,11 +26,9 @@ public class MediaAluno {
         System.out.println("Forneca a terceira nota do aluno: ");
         double nota3 = sc.nextDouble();
 
-        double media = nota1 + nota2 + nota3 / 3;
+        double media = (nota1 + nota2 + nota3) / 3;
 
-        System.out.println("Essa é a média aritmética do aluno: " + nome + df.format(media));
+        System.out.println("Essa é a média aritmética do aluno: " + aluno + df.format(media));
         sc.close();
     }
 }
-
-
