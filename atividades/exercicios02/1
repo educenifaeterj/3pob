@@ -8,7 +8,7 @@ Conceitos: Operador módulo (%) e estrutura if-else simples.
 package atividades.exercicios02;
 
 
-import java.util.Scannner;
+import java.util.Scanner;
 
 public class LeituraPar {
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class LeituraPar {
 
         if(num%2==0)
         {
-            System.out.println("O valor %d é par" + num);
+            System.out.println("O valor " + num + " é par");
         }
         else {
             System.out.println("O valor " + num + "é impar ");
